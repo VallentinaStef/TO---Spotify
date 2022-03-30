@@ -53,7 +53,7 @@
 <center> <h1>Edit Identitas Buku</h1> 
 
             <form action="/Update/{{$data->id}}" method="POST" enctype="multipart/form-data">
-            @csrf
+            @csrf   
              <div class="form-tambah">
             <label class="form-label">Judul Lagu</label>
             <input name="JudulLagu" type="text" value="{{$data->JudulLagu}}"> <br><br>
@@ -67,9 +67,6 @@
             <textarea name="Lirik" class="textarea" cols="5"> {{$data->Lirik}} </textarea> <br><br>
 
 
-            <label class="form-label">Lagu</label>
-            <input name="Lagu" type="file" value="{{$data->Lagu}}"> <br><br><br>
-            
 
             <button type="submit" class="button">Submit</button> 
             <a href="/dashboard" class="button">Back</a></center>

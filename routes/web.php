@@ -14,6 +14,8 @@ use App\Http\Controllers\SoptifyController;
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });

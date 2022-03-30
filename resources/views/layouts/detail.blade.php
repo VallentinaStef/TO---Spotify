@@ -46,7 +46,7 @@
     <p class="card-text">{{ $data->Lirik }}</p>
      
     <audio controls>
-        <source src="{{$data->Lagu}}" type="audio/mpeg">
+        <source src="{{ asset('lagu/swipe.mp3')}}" type="audio/mpeg">
         </audio> <br><br>
     <a href="/dashboard" class="button">Back</a>
 </div>

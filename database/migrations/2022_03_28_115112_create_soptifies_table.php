@@ -18,7 +18,6 @@ return new class extends Migration
             $table->String('JudulLagu');
             $table->String('PenciptaLagu');
             $table->longtext('Lirik');
-            $table->String('Lagu');
             $table->timestamps();
         });
     }

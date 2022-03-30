@@ -18,9 +18,9 @@ class SoptifyController extends Controller
     public function insert(Request $request)
     {
         $data = soptify::create($request->all());
-        if($request->hasFile('music')){
-            $request->file('music')->move('lagu/', $request->file('music')->getClientOriginalName());
-            $data->audio = $request->file('music')->getClientOriginalName();
+        if($request->hasFile('audio')){
+            $request->file('audio')->store('musik','public')->move('lagu/', $request->file('audio')->getClientOriginalName());
+            $data->audio = $request->file('audio')->getClientOriginalName();
             $data->save();
         }
         return redirect()->route('dashboard')->with('success ',' Data Berhasi di Tambahkan. ');

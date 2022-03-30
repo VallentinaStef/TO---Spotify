@@ -67,12 +67,8 @@
                 <textarea name="Lirik" class="textarea" cols="5"></textarea> <br><br>
 
 
-                <label class="form-label">Lagu</label>
-                <input name="Lagu" type="file"> <br><br><br>
-                
-
                 <button type="submit" class="button">Submit</button> 
-                <a href="/dashboard" class="button">Back</a> </center>
+                <a href="/dashboard" class="button">Back</a> 
                 </form>
             </div>
   </body>
